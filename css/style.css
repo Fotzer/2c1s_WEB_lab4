@@ -1,0 +1,129 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px black solid;
+}
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    margin-left: 10px;
+
+}
+
+.menu {
+    height: 20px;
+    margin-right: 5px;
+}
+
+
+.midbody {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.intro {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 40px;
+}
+
+.intro-text {
+    font-family: 'Josefin Sans', sans-serif;
+    width: 600px;
+}
+
+
+.midbody-flex {
+    background-image: url('../images/black-line.png');
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    background-position-y: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+
+.infobody {
+    border: 1px black solid;
+    background-color: white;
+    border-radius: 15px;
+    height: 400px;
+    width: 400px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.infobody-img {
+    margin-top: 5px;
+    height: 200px;
+}
+
+.infobody-title {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.infobody-text {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0 5px;
+}
+
+.infobody-button {
+    margin-top: auto;
+    margin-bottom: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    border: 1px black solid;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+
+.infobody-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-top: auto;
+    text-align: center;
+    border-top: 1px black solid;
+}
+
+.footer-text {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 900px){
+    .midbody-flex {
+        flex-direction: column;
+        background-size: 100% 15%;
+    }
+}
